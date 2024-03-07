@@ -20,8 +20,7 @@ class Router {
 
         if($fn) {
             // La URL existe y hay una función asociada
-
-            debug($fn);
+            call_user_func($fn, $this);
         } else {
             echo "página no encontrada";
         }
